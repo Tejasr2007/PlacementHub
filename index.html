@@ -1,0 +1,244 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="PlacementHub helps students explore jobs, internships, and track placement applications.">
+  <title>PlacementHub | Your Career Starts Here</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+  <!-- Our CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <a href="#" class="logo">
+      <span class="logo-icon"><i class="fa-solid fa-rocket"></i></span>
+      Placement<span>Hub</span>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#home" class="active">Home</a>
+      <a href="#jobs">Explore Jobs</a>
+      <a href="#tracker">My Applications</a>
+    </nav>
+
+    <a href="#jobs" class="nav-button">Find Opportunities <i class="fa-solid fa-arrow-right"></i></a>
+
+    <button class="menu-btn" id="menuBtn" aria-label="Toggle navigation" aria-expanded="false">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <div class="eyebrow">
+          <i class="fa-solid fa-star"></i>
+          YOUR CAREER JOURNEY STARTS HERE
+        </div>
+
+        <h1>Dream big.<br>Get <span>hired.</span> Shine.</h1>
+
+        <p class="hero-description">
+          Discover exciting internships and job opportunities.
+          Your next big career move starts with one click.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#jobs" class="btn btn-primary">
+            Explore Opportunities <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <a href="#tracker" class="btn btn-secondary">
+            Track Applications
+          </a>
+        </div>
+
+        <div class="hero-trust">
+          <div class="trust-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+          <div>
+            <strong>Built for students</strong>
+            <p>Discover. Apply. Achieve.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="glow glow-one"></div>
+        <div class="glow glow-two"></div>
+
+        <div class="floating-card top-card">
+          <span class="mini-icon"><i class="fa-solid fa-bolt"></i></span>
+          <div><strong>New opportunities</strong><p>Your next chapter awaits</p></div>
+        </div>
+
+        <div class="dashboard-preview">
+          <div class="preview-header">
+            <div>
+              <span class="preview-label">YOUR CAREER DASHBOARD</span>
+              <h3>Welcome back! 👋</h3>
+            </div>
+            <div class="avatar">PH</div>
+          </div>
+
+          <div class="preview-stats">
+            <div class="stat-box">
+              <span class="stat-icon purple-icon"><i class="fa-solid fa-paper-plane"></i></span>
+              <p>Applications</p>
+              <h2>12</h2>
+            </div>
+            <div class="stat-box">
+              <span class="stat-icon pink-icon"><i class="fa-solid fa-calendar-check"></i></span>
+              <p>Interviews</p>
+              <h2>03</h2>
+            </div>
+          </div>
+
+          <div class="preview-job">
+            <div class="company-logo google-logo">G</div>
+            <div class="preview-job-info">
+              <strong>Software Engineer Intern</strong>
+              <p>Google · Internship</p>
+            </div>
+            <i class="fa-solid fa-bookmark bookmark-icon"></i>
+          </div>
+
+          <div class="preview-job">
+            <div class="company-logo meta-logo"><i class="fa-brands fa-meta"></i></div>
+            <div class="preview-job-info">
+              <strong>Frontend Developer</strong>
+              <p>Meta · Full-time</p>
+            </div>
+            <i class="fa-regular fa-bookmark bookmark-icon"></i>
+          </div>
+
+          <div class="preview-progress">
+            <div><span>Career progress</span><strong>75%</strong></div>
+            <div class="progress-track"><div class="progress-fill"></div></div>
+          </div>
+        </div>
+
+        <div class="floating-card bottom-card">
+          <span class="success-icon"><i class="fa-solid fa-check"></i></span>
+          <div><strong>Keep going!</strong><p>Your future is bright ✨</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Statistics -->
+    <section class="stats-section">
+      <div class="stat-item"><h2>01</h2><p>Career platform</p></div>
+      <div class="stat-item"><h2>24/7</h2><p>Explore anytime</p></div>
+      <div class="stat-item"><h2>100%</h2><p>Student focused</p></div>
+      <div class="stat-item"><h2>∞</h2><p>Possibilities</p></div>
+    </section>
+
+    <!-- Jobs Section -->
+    <section class="jobs-section" id="jobs">
+      <div class="section-heading">
+        <div>
+          <span class="section-tag">OPPORTUNITIES AWAIT</span>
+          <h2>Find your <span>next opportunity</span></h2>
+          <p>Explore sample jobs and internships curated for your career journey.</p>
+        </div>
+      </div>
+
+      <div class="job-controls">
+        <div class="search-box">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" id="jobSearch" placeholder="Search jobs, skills or companies..." aria-label="Search jobs">
+        </div>
+
+        <select id="typeFilter" aria-label="Filter by job type">
+          <option value="all">All opportunities</option>
+          <option value="Internship">Internships</option>
+          <option value="Full-time">Full-time jobs</option>
+        </select>
+      </div>
+
+      <div class="job-grid" id="jobGrid">
+        <!-- JavaScript will insert job cards here -->
+      </div>
+      <p class="results-message" id="resultsMessage" aria-live="polite"></p>
+    </section>
+
+    <!-- Application Tracker -->
+    <section class="tracker-section" id="tracker">
+      <div class="section-heading">
+        <div>
+          <span class="section-tag">STAY ORGANIZED</span>
+          <h2>Your application <span>tracker</span></h2>
+          <p>Keep track of the opportunities you decide to pursue.</p>
+        </div>
+      </div>
+
+      <div class="tracker-summary">
+        <div class="tracker-card">
+          <span class="tracker-symbol"><i class="fa-solid fa-paper-plane"></i></span>
+          <p>Total applications</p>
+          <h3 id="totalApplications">0</h3>
+        </div>
+        <div class="tracker-card">
+          <span class="tracker-symbol"><i class="fa-solid fa-clock"></i></span>
+          <p>In progress</p>
+          <h3 id="progressApplications">0</h3>
+        </div>
+        <div class="tracker-card">
+          <span class="tracker-symbol"><i class="fa-solid fa-trophy"></i></span>
+          <p>Selected</p>
+          <h3 id="selectedApplications">0</h3>
+        </div>
+      </div>
+
+      <div class="application-list">
+        <div class="application-header">
+          <h3>My applications</h3>
+          <span class="sample-label">Saved in your browser</span>
+        </div>
+        <div id="applicationList">
+          <div class="empty-state">
+            <i class="fa-regular fa-folder-open"></i>
+            <h3>No applications yet</h3>
+            <p>Explore opportunities above and add a job to start tracking.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section">
+      <div class="cta-content">
+        <span class="section-tag">YOUR FUTURE IS WAITING</span>
+        <h2>One opportunity can change <span>everything.</span></h2>
+        <p>Take the next step towards the career you've always imagined.</p>
+        <a href="#jobs" class="btn btn-primary">Start Exploring <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <div class="cta-decoration"><i class="fa-solid fa-rocket"></i></div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <a href="#home" class="logo">
+      <span class="logo-icon"><i class="fa-solid fa-rocket"></i></span>
+      Placement<span>Hub</span>
+    </a>
+    <p>Made with <span class="heart">♥</span> for your career journey.</p>
+    <p class="copyright">© <span id="currentYear"></span> PlacementHub. Student project using frontend technologies.</p>
+  </footer>
+
+  <!-- Our JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
